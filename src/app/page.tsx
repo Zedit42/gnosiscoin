@@ -4,9 +4,10 @@ import CustomPieChart from './components/CustomPieChart'
 import Hero from "./components/Hero";
 import Stat from "./components/Stat";
 import Footer from './components/Footer'
-
+import { useState } from "react";
 
 export default function Home() {
+
   const data = [
     { name: 'Development', value: 15 },
     { name: 'Flexible Funds', value: 15 },
@@ -16,7 +17,7 @@ export default function Home() {
     { name: 'Burn', value: 15 },
   ];
   return (
-    <main className="flex min-h-screen bg-[#E9E7DC] w-screen flex-col">
+    <main className="flex min-h-screen bg-[#E9E7DC] w-screen flex-col" >
       <Header/>
       <div className=" w-screen z-10">
         <Hero/>

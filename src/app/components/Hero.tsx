@@ -1,11 +1,36 @@
 "use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from 'next/link';
+import { Howl } from 'howler';
+
+
 
 const Hero = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const sound = new Howl({
+      src: ['/hoot.mp3'],
+      onend: () => setIsPlaying(false),
+    });
+
+    return () => {
+      sound.unload();
+    };
+  }, []);
+
+  const handleClick = () => {
+    const sound = new Howl({
+      src: ['/hoot.mp3'],
+      onplay: () => setIsPlaying(true),
+    });
+    sound.play();
+  };
+
+
   const [isHovered, setIsHovered] = useState(false);
 
   const toggleHover = () => setIsHovered(!isHovered);
@@ -49,6 +74,7 @@ const Hero = () => {
               whileHover={hoverStyles}
               whileTap={{ scale: 0.9 }}
               className="bg-[#3E6957] hover:bg-[#133629] text-[#E9E7DC] font-bold py-2 px-4 hover:text-[#E9E7DC]  rounded-lg "
+              onClick={handleClick}
             >
               <div className="relative">
                 <div className="relative z-10">{isHovered ? "Join The Crew" : "Buy some Gnowls"}</div>
