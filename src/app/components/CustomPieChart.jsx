@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const CustomPieChart = ({ data }) => {
-  const COLORS = ['#2dd4bf', '#14b8a6', '#0d9488', '#a3e635', '#84cc16', '#65a30d'];
+  const COLORS = ['#FE7439', '#330046', '#AD7A69', '#0C2844', '#642B3A', '#01B0BB'];
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       const data = payload[0].payload;

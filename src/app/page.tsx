@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Stat from "./components/Stat";
 import Footer from './components/Footer'
 import { useState } from "react";
+import Cards from "./components/Cards";
 
 export default function Home() {
 
@@ -22,9 +23,8 @@ export default function Home() {
       <div className=" w-screen z-10">
         <Hero/>
         <Stat/>
-        <div className=" ">
-          <CustomPieChart data={data}/>
-        </div>
+        <Cards/>
+        <CustomPieChart data={data}/>
         <Footer/>
       </div>
     </main>

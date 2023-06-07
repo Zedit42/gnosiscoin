@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import abi from "../utils/WavePortal.json";
+import Link from "next/link";
 
 const Header = () => {
     const [show, setShow] = useState(false);
@@ -72,12 +73,15 @@ const Header = () => {
             <p className=" text-3xl italic font-lora text-[#133629] ">Gnowls</p>
             <div className="hidden sm:flex flex-row items-center justify-center w-full space-x-6  ">
               <div className=' justify-center flex items-center space-x-[-4px] '>
-                <button className="inline-block my-2 rounded-l-lg p-[2px]  focus:outline-none  active:text-opacity-75 ">
-                  <span className="block rounded-l-lg  border-r-0 bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-200 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm">Lp</span>
-                </button>
-                <button className="inline-block my-2 p-[2px] rounded-r-lg focus:outline-none  active:text-opacity-75">
-                  <span className="block rounded-r-lg  border-l-0 bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm">Earn</span>
-                </button>
+                <Link href={'/Lp'} className="inline-block my-2 rounded-l-lg p-[2px]  focus:outline-none  active:text-opacity-75 ">
+                  <span className="block rounded-l-lg   bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-200 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm">Lp</span>
+                </Link>
+                <Link href={'/Airdrop'} className="inline-block my-2 p-[2px] rounded-r-lg focus:outline-none  active:text-opacity-75">
+                  <span className="block   bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm">Airdrop</span>
+                </Link>
+                <Link href={'/Earn'} className="inline-block my-2 p-[2px] rounded-r-lg focus:outline-none  active:text-opacity-75">
+                  <span className="block rounded-r-lg  b bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm">Earn</span>
+                </Link>
               </div>
             </div>
             <div className='hidden  sm:block my-auto'>
@@ -162,12 +166,15 @@ const Header = () => {
           >
             <div className=' w-full flex justify-center'>
               <div className=' flex flex-col w-full animate-fade'>
-                  <button className="inline-block rounded-l-lg p-[2px]  focus:outline-none  active:text-opacity-75">
+                    <Link href={'/Lp'} className="inline-block rounded-l-lg p-[2px]  focus:outline-none  active:text-opacity-75">
                       <span className="block rounded-lg border border-current bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm ">Lp</span>
-                    </button>
-                    <button className="inline-block p-[2px]  focus:outline-none  active:text-opacity-75">
+                    </Link>
+                    <Link href={'/Airdrop'} className="inline-block p-[2px]  focus:outline-none  active:text-opacity-75">
+                      <span className="block border border-current bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm ">Airdrop</span>
+                    </Link>
+                    <Link href={'/Earn'} className="inline-block p-[2px]  focus:outline-none  active:text-opacity-75">
                       <span className="block rounded-lg border border-current bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm ">Earn</span>
-                    </button>
+                    </Link>
                     {!currentAccount ? (
                       <button className="block  border border-current bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-4 py-3 text-sm min-w-[140px] rounded-lg" onClick={connectWallet}>
                       Connect Wallet
