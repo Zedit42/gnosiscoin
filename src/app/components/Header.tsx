@@ -70,7 +70,7 @@ const Header = () => {
         <nav className="2xl:container 2xl:mx-auto sm:py-6 sm:px-7 py-5 px-4">
           {/* For large and Medium-sized Screen */}
           <div className="flex justify-between animate-fade ">
-            <p className=" text-3xl italic font-lora text-[#133629] ">Gnowls</p>
+            <Link href={'/'} className=" text-3xl italic font-lora text-[#133629] ">Gnowls</Link>
             <div className="hidden sm:flex flex-row items-center justify-center w-full space-x-6  ">
               <div className=' justify-center flex items-center space-x-[-4px] '>
                 <Link href={'/Lp'} className="inline-block my-2 rounded-l-lg p-[2px]  focus:outline-none  active:text-opacity-75 ">
