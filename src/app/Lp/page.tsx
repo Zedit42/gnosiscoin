@@ -72,7 +72,7 @@ const page = () => {
                         className="group relative inline-flex  bg-[#3E6957]/80 hover:bg-[#3E6957]/90 items-center overflow-hidden rounded-lg px-8 py-3 text-[#E9E7DC]  "
                         >
                             <span className="absolute end-2 transition-all group-hover:end-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                                 </svg>
                             </span>
@@ -93,7 +93,7 @@ const page = () => {
                         className="group relative inline-flex  bg-[#3E6957]/80 hover:bg-[#3E6957]/90 items-center overflow-hidden rounded-lg px-8 py-3 text-[#E9E7DC]  "
                         >
                         <span className="absolute end-2 transition-all group-hover:end-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                         </span>
