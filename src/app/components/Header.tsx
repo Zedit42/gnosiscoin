@@ -165,12 +165,12 @@ const Header = () => {
             className={`${show ? 'block' : 'hidden'} sm:hidden mt-[1rem] fixed z-50 w-[90vw] mx-auto`}
           >
             <div className=' w-full flex justify-center'>
-              <div className=' flex flex-col w-full animate-fade'>
+              <div className=' flex flex-col w-full animate-fade text-center'>
                     <Link href={'/Lp'} className="inline-block rounded-l-lg p-[2px]  focus:outline-none  active:text-opacity-75">
                       <span className="block rounded-lg border border-current bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm ">Lp</span>
                     </Link>
                     <Link href={'/Airdrop'} className="inline-block p-[2px]  focus:outline-none  active:text-opacity-75">
-                      <span className="block border border-current bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm ">Airdrop</span>
+                      <span className="block border rounded-lg border-current bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm ">Airdrop</span>
                     </Link>
                     <Link href={'/Earn'} className="inline-block p-[2px]  focus:outline-none  active:text-opacity-75">
                       <span className="block rounded-lg border border-current bg-[#3E6957]/30 hover:bg-[#3E6957]/60 duration-300 ease-in backdrop-blur-[8px] text-[#133629] px-8 py-3 text-sm ">Earn</span>
