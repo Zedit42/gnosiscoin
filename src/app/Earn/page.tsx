@@ -62,7 +62,7 @@ const page = () => {
                                 type="number"
                                 id="UserEmail"
                                 placeholder="Stake"
-                                className="peer h-8 w-full border-none bg-transparent p-0 placeholder:text-[#E9E7DC] focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                                className="peer h-8 w-full border-none bg-transparent p-0 placeholder:text-[#E9E7DC] focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm cursor-pointer"
                             />
 
                             </label>
@@ -98,7 +98,7 @@ const page = () => {
                                 type="number"
                                 id="UserEmail"
                                 placeholder="Claim"
-                                className="peer h-8 w-full border-none bg-transparent p-0 placeholder:text-[#E9E7DC] focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                                className="peer h-8 w-full border-none bg-transparent p-0 placeholder:text-[#E9E7DC] focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm cursor-pointer"
                             />
 
                             </label>
